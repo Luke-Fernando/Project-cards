@@ -1,0 +1,27 @@
+.navbar{
+    height: 150px;
+    width: 90%;
+    margin: auto;
+    background-color: #222E50;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // position: fixed;
+    // z-index: 5;
+    // top: 0;
+    // left: 0;
+    // transform: translate(calc(50vw - 50%));
+    // margin: auto;
+    // left: auto;
+    // right: auto;
+    // border: 1px solid grey;
+}
+.logo{
+    height: 100%;
+    width: auto;
+    // margin-left: 2rem;
+    // font-family: 'Poppins', sans-serif;
+    // font-weight: 700;
+    // color: #E0CA3C;
+    // margin-left: 1rem;
+}

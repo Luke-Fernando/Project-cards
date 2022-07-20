@@ -1,0 +1,165 @@
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #222E50;
+}
+
+.main-container {
+  margin: auto;
+  max-width: 1440px;
+  width: 95%;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 150px;
+  width: 90%;
+  margin: auto;
+  background-color: #222E50;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.project-cards {
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: repeat(1, 420px);
+  justify-content: space-between;
+  align-content: center;
+}
+
+.project-card {
+  background-color: #8E4A49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all ease-in-out 200ms;
+}
+.project-card:hover {
+  box-shadow: 0px 182px 51px rgba(15, 21, 36, 0.01), 0px 116px 47px rgba(15, 21, 36, 0.1), 0px 66px 39px rgba(15, 21, 36, 0.33), 0px 29px 29px rgba(15, 21, 36, 0.55), 0px 7px 16px rgba(15, 21, 36, 0.64), 0px 0px 0px rgba(15, 21, 36, 0.65);
+}
+
+.link-btns {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.link-btns .link-clicks {
+  text-decoration: none;
+}
+.link-btns .live-preview-btn {
+  font-size: 25px;
+  color: #C9D6EA;
+  margin-right: 1rem;
+  transition: all ease-in-out 200ms;
+}
+.link-btns .live-preview-btn:hover {
+  color: #E0CA3C;
+}
+.link-btns .github-btn {
+  font-size: 25px;
+  color: #C9D6EA;
+  transition: all ease-in-out 200ms;
+}
+.link-btns .github-btn:hover {
+  color: #E0CA3C;
+}
+
+.project-name-sec {
+  width: 90%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.project-name-sec .project-name {
+  font-family: "Poppins", sans-serif;
+  color: #C9D6EA;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1230px) {
+  .project-cards {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(1, 360px);
+  }
+  .link-btns .live-preview-btn {
+    font-size: 22px;
+  }
+  .link-btns .github-btn {
+    font-size: 22px;
+  }
+  .project-name-sec .project-name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .project-cards {
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(1, 290px);
+  }
+  .link-btns .live-preview-btn {
+    font-size: 20px;
+  }
+  .link-btns .github-btn {
+    font-size: 20px;
+  }
+  .project-name-sec .project-name {
+    font-size: 16px;
+  }
+}
+@media (max-width: 890px) {
+  .project-cards {
+    width: 70%;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 290px);
+    align-content: space-between;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 630px) {
+  .project-cards {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .project-cards {
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(4, 360px);
+    grid-row-gap: 1rem;
+    justify-content: center;
+  }
+  .link-btns .live-preview-btn {
+    font-size: 23px;
+  }
+  .link-btns .github-btn {
+    font-size: 23px;
+  }
+  .project-name-sec .project-name {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
